@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_tcc/screens/dashboardPages/user.dart';
 
+import '../components/my_flutter_app_icons.dart';
 import 'dashboardPages/home.dart';
 
 class Dashboard extends StatefulWidget {
@@ -28,7 +29,8 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFE5E5E5),
+      backgroundColor: Color(0xFF2A0845),
+      // Color(0xFFE5E5E5),
       body: PageView(
         controller: pageController,
         onPageChanged: (index) {
@@ -45,41 +47,38 @@ class _DashboardState extends State<Dashboard> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         elevation: 0,
-        backgroundColor: Color(0xFFE5E5E5),
+        backgroundColor: Color(0xFF2A0845),
+        // Color(0xFFE5E5E5),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: 'Home',
               activeIcon: Icon(Icons.home)),
           BottomNavigationBarItem(
+            icon: Icon(Icons.list),
+            label: 'Lista',
+            activeIcon: Icon(Icons.list),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Busca',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_basket_outlined),
+            label: 'Cesta',
+            activeIcon: Icon(Icons.shopping_basket),
+          ),
+          BottomNavigationBarItem(
             icon: Icon(Icons.account_circle_outlined),
             label: 'Usuário',
             activeIcon: Icon(Icons.account_circle),
           ),
-
-
-          // BottomNavigationBarItem(
-          //   icon: Icon(MyFlutterApp.th_list_outline),
-          //   label: 'Lista',
-          //   activeIcon: Icon(MyFlutterApp.th_list),
-          // ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(Icons.search),
-          //   label: 'Busca',
-          // ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(Icons.shopping_basket_outlined),
-          //   label: 'Cesta',
-          //   activeIcon: Icon(Icons.shopping_basket),
-          // ),
-
-
-
         ],
         type: BottomNavigationBarType.fixed,
         currentIndex: _indexScreen,
-        unselectedItemColor: Colors.grey.shade600,
-        selectedItemColor: const Color(0xFF510C83),
+        unselectedItemColor: Color(0xA9C8C8CE),
+        selectedItemColor: Colors.white,
+        // const Color(0xFF510C83),
         onTap: _onItemTapped,
       ),
     );

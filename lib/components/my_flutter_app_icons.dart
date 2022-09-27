@@ -27,4 +27,5 @@ class MyFlutterApp {
 
   static const IconData th_list = IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData th_list_outline = IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData sliders = IconData(0xf1de, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }

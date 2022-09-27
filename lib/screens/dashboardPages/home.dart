@@ -33,7 +33,8 @@ class _HomeState extends State<Home> {
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 30,
-                    color: Color(0xFF2A0845),
+                    color: Colors.white,
+                    // Color(0xFF2A0845),
                   ),
                 ),
                 Text(
@@ -41,7 +42,8 @@ class _HomeState extends State<Home> {
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 30,
-                    color: Color(0xFF2A0845),
+                    color: Colors.white,
+                    // Color(0xFF2A0845),
                   ),
                 )
               ],
@@ -51,7 +53,7 @@ class _HomeState extends State<Home> {
             width: 370,
             height: 140,
             decoration: BoxDecoration(
-              color: Colors.black,
+              color: Colors.white,
               borderRadius: BorderRadius.circular(20),
             ),
           ),

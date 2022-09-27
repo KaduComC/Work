@@ -22,7 +22,7 @@ class CategoriaHome extends StatelessWidget {
             width: 200,
             height: 150,
             decoration: BoxDecoration(
-              color: Colors.black,
+              color: Colors.white,
               borderRadius: BorderRadius.circular(20),
               image: DecorationImage(
                 image: AssetImage(image),

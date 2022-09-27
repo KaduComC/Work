@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:projeto_tcc/screens/dashboard.dart';
+import 'package:projeto_tcc/screens/dashboardPages/homePages/categoriesPage.dart';
 import 'package:projeto_tcc/screens/signin_signup/SignUpIn.dart';
 import 'screens/dashboardPages/homePages/produtosPage.dart';
 
@@ -21,10 +22,11 @@ class MyApp extends StatelessWidget {
       ),
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate
       ],
       supportedLocales: [const Locale('pt', 'BR')],
-      home: const Dashboard(),
+      home: const ProdutosPageView(),
     );
   }
 }
