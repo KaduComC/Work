@@ -46,6 +46,7 @@ dependencies:
   intl: ^0.17.0
   material_floating_search_bar: ^0.3.7
   masked_text_field: ^1.0.1
+  hexcolor: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -90,6 +91,7 @@ flutter:
     - assets/images/fish.png
     - assets/images/avatar.png
     - assets/images/work-in-progress.png
+    - assets/images/person.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

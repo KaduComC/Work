@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS datas_user (
+	id SERIAL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL,
+	apelido VARCHAR(50) NOT NULL,
+	nascimento DATE NOT NULL,
+	email VARCHAR(100) NOT NULL,
+	telefone VARCHAR(13) NOT NULL,
+	senha VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS produtos (
+	id SERIAL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL,
+	preco NUMERIC(8, 2)
+);
+
+INSERT INTO produtos(nome, preco)
+	VALUES ('Bombom', 12.50);
+
+INSERT INTO datas_user(nome, apelido, nascimento, email, telefone, senha)
+	VALUES ('Carlos Eduardo', 'Kadu', '2000-08-07', 'caduarruda49@gmail.com', '62 99865-1575', '12kadu34****')
+
+SELECT * FROM produtos;
+
+SELECT * FROM datas_user;

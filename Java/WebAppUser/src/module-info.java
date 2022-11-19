@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author kadu
+ *
+ */
+module WebAppUser {
+}

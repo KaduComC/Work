@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_tcc/screens/dashboardPages/user.dart';
-
-import '../components/my_flutter_app_icons.dart';
+import 'package:projeto_tcc/screens/dashboardPages/userPage.dart';
 import 'dashboardPages/home.dart';
 
 class Dashboard extends StatefulWidget {
@@ -35,14 +33,14 @@ class _DashboardState extends State<Dashboard> {
         controller: pageController,
         onPageChanged: (index) {
           setState(
-                () {
+            () {
               _indexScreen = index;
             },
           );
         },
         children: const <Widget>[
           Home(),
-          User()
+          // UserPage(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -54,25 +52,25 @@ class _DashboardState extends State<Dashboard> {
               icon: Icon(Icons.home),
               label: 'Home',
               activeIcon: Icon(Icons.home)),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.list),
-            label: 'Lista',
-            activeIcon: Icon(Icons.list),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Busca',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_basket_outlined),
-            label: 'Cesta',
-            activeIcon: Icon(Icons.shopping_basket),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle_outlined),
-            label: 'Usuário',
-            activeIcon: Icon(Icons.account_circle),
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.list),
+          //   label: 'Lista',
+          //   activeIcon: Icon(Icons.list),
+          // ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.search),
+          //   label: 'Busca',
+          // ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.shopping_basket_outlined),
+          //   label: 'Cesta',
+          //   activeIcon: Icon(Icons.shopping_basket),
+          // ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.account_circle_outlined),
+          //   label: 'Usuário',
+          //   activeIcon: Icon(Icons.account_circle),
+          // ),
         ],
         type: BottomNavigationBarType.fixed,
         currentIndex: _indexScreen,
